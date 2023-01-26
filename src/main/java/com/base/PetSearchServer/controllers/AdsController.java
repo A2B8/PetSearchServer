@@ -43,7 +43,10 @@ public class AdsController {
                 adRequest.getAddress(),
                 adRequest.getGeoLat(),
                 adRequest.getGeoLon(),
-                adRequest.getDescription()
+                adRequest.getDescription(),
+                adRequest.getName(),
+                adRequest.getTel(),
+                adRequest.getEmail()
                 //, appUser
         );
 

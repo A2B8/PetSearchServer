@@ -18,4 +18,7 @@ public class AdRequest {
     private final float geoLat;
     private final float geoLon;
     private final String description;
+    private final String name;
+    private final String tel;
+    private final String email;
 }

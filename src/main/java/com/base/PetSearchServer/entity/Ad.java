@@ -39,6 +39,9 @@ public class Ad {
     private float geoLat;
     private float geoLon;
     private String description;
+    private String name;
+    private String tel;
+    private String email;
     private String filename;
 
     public long getId() {
@@ -117,6 +120,30 @@ public class Ad {
         return filename;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getTel() {
+        return tel;
+    }
+
+    public void setTel(String tel) {
+        this.tel = tel;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public void setFilename(String filename) {
         this.filename = filename;
     }
@@ -128,7 +155,10 @@ public class Ad {
               String address,
               float geoLat,
               float geoLon,
-              String description
+              String description,
+              String name,
+              String tel,
+              String email
              // AppUser appUser
               ) {
         this.isLost = isLost;
@@ -139,6 +169,9 @@ public class Ad {
         this.geoLat = geoLat;
         this.geoLon = geoLon;
         this.description = description;
+        this.name = name;
+        this.tel = tel;
+        this.email = email;
         //this.creator = appUser;
     }
 }
